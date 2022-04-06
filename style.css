@@ -1,0 +1,547 @@
+/* Jerry French 7/28/2021, file-style.css*/
+
+
+/* CSS reset */
+/* make sure all browsers run code the same */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td,figure,figcaption { 
+    margin:0;
+    padding:0;
+}
+html,body {
+    margin:0;
+    padding:0;
+}
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+fieldset,img { 
+    border:0;
+}
+input{									/* CSS reset */
+    border:1px solid #b0b0b0;
+    padding:3px 5px 4px;
+    color:#979797;
+    width:190px;
+}
+address,caption,cite,code,dfn,th,var {
+    font-style:normal;
+    font-weight:normal;
+}
+ol,ul {
+    list-style:none;
+}
+caption,th {
+    text-align:left;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-size:100%;
+    font-weight:normal;
+}
+q:before,q:after {
+    content:'';
+}
+abbr,acronym { border:0;
+}
+
+/* style rules for mobile */
+
+
+/*Body Graphics*/
+body {
+
+	/* background image */
+	background-image: linear-gradient(to bottom, rgba(217, 217, 217,1), rgba(191, 191, 191,1));
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-attachment: fixed;
+	
+/*text*/
+	text-align: center;
+	color: rgb(0, 0, 77);
+	font-family: Courgette, sans-serif, ariel;
+	font-size: 100%
+}
+
+
+/* header display */
+
+	/*header always visable and moves with scoll*/
+header {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	height: auto;
+	width: auto;
+
+	/* background image */
+	background-image: linear-gradient(to bottom, rgba(172, 198, 210,1), rgba(0,0,0,1));
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-attachment: fixed;
+	
+	border-style: double;
+	border-width: 12px;
+	
+	font-family: Roboto, sans-serif, ariel;
+	font-size: 1.5em;
+	
+	padding-top: 5%;
+	padding-right: 10%;
+	padding-bottom: 5%;
+	padding-left: 10%;
+	
+	margin: 1%;
+	
+	border-radius: 90%;
+}
+
+header img {
+	margin: 0 auto;
+}
+
+#icon{
+ 
+	animation: moveIcon 5s linear 2s infinite alternate;
+}
+
+@keyframes moveIcon {
+	0%   {transform: rotate(0deg);}
+	25%  {transform: rotate(25deg);}
+	50%  {transform: rotate(180deg);}
+	75%  {transform: rotate(360eg);}
+	100% {transform: rotate(580deg);}
+
+}
+
+/* file projects*/
+#code{
+	border-style: dotted;
+	border-width: 5px;
+	border-radius: 35px;
+	
+	padding-top: 3%;
+	padding-right: 2%;
+	padding-bottom: 2%;
+	padding-left: 2%;
+}
+
+}
+/* file index*/
+figcaption {
+
+	font-size: 75%
+
+}
+
+/* changes header marked class= intro*/
+h1.intro {
+    color: blue;
+	
+}
+
+/* file about*/
+h1.about {
+    
+	animation: colorC 5s linear 2s infinite alternate;
+}
+
+@keyframes colorC {
+	0%   {background-color: red;}
+	25%  {background-color: blue;}
+	50%  {background-color: green;}
+	75%  {background-color: orange;}
+	100% {background-color: purple;}
+}
+
+/* file about*/
+h2.interest {
+	color: blue;
+	
+}
+/* project file */
+
+#projects{
+	font-size: 200%;
+	text-align: center;
+}
+	
+
+
+/* image display */
+img { 
+	max-width: 100%;
+	max-height: 100%;
+	display: block;
+	/* image center */
+	margin-left: auto;
+    margin-right: auto;
+	
+	}
+	
+	
+	/* link display */
+	
+/* unvisited link */
+a:link {
+  color: rgb(255, 51, 0);
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: red;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+  }
+	
+	/* centers map */
+ #gmap_canvas{
+	max-width: 100%;
+	max-height: 100%;
+	display: block;
+	/* image center */
+	margin-left: auto;
+    margin-right: auto;
+	}
+  
+  /* navigation display */
+
+nav{
+	/* background image */
+	background-image: linear-gradient(to bottom, rgba(172, 198, 210,1), rgba(0,0,0,1));
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-attachment: fixed;
+	
+	border-style: double;
+	border-width: 12px;
+	
+	font-size: 1.5em;
+	
+	padding-top: 2%;
+	padding-right: 3%;
+	padding-bottom: 2%;
+	padding-left: 3%;
+	
+	/*width: 50%;*/
+	
+	
+	margin-bottom: 1%
+}
+
+nav li {
+	display: block;
+	border: 2px solid #555;
+	list-style-type: none;
+	
+}
+
+
+
+/* main content display */
+
+main{
+
+	/* background image */
+	background-image: linear-gradient(to bottom, rgba(172, 198, 210,1), rgba(0,0,0,0.5));
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-attachment: fixed;
+	
+	border-style: double;
+	border-width: 12px;
+	border-radius: 25px;
+	
+	font-size: 100%;
+	
+	
+	padding-top: 2%;
+	padding-right: 3%;
+	padding-bottom: 2%;
+	padding-left: 3%;
+	
+	
+	margin: 0 auto;
+}
+
+
+	/* about me div */
+#aboutMe{
+	border-style: dotted;
+	border-width: 6px;
+	
+	font-size: 1.2em;
+	
+	
+	padding-top: 2%;
+	padding-right: 3%;
+	padding-bottom: 2%;
+	padding-left: 3%;
+	
+	width: 0 auto;
+	height: 0 auto;
+	
+	margin: 1%;
+}
+
+#edu{
+	font-size: 120%
+}
+	/* table specifications */
+table{
+	background: rgb(172, 210, 172);
+	
+}
+table, th, tr, td {
+	border:  solid black;
+	border-collapse: collapse;
+	margin: auto;
+	padding-top: 2%;
+	padding-right: 3%;
+	padding-bottom: 2%;
+	padding-left: 3%;
+}
+
+th, td {
+  font-size: 90%;
+  text-align: left;
+}
+
+caption{
+
+	text-align: center;
+	font-size: 130%;
+}
+
+/* map div display */
+#map{	
+
+	/* background image */
+	background-image: linear-gradient(to bottom, rgba(172, 210, 172,1), rgba(0,0,0,1));
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-attachment: fixed;
+	
+	border-style: double;
+	border-width: 12px;
+	
+	font-size: 1.5em;
+	
+	padding-top: 2%;
+	padding-right: 3%;
+	padding-bottom: 2%;
+	padding-left: 3%;
+	
+	width: 70%;
+	
+	margin-left: auto;
+    margin-right: auto;
+}
+
+form{
+	background-image: linear-gradient(to bottom, rgba(172, 210, 172,1), rgba(0,0,0,1));
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-attachment: fixed;
+	
+	border-style: double;
+	border-width: 12px;
+	
+	font-size: 1.5em;
+	
+	padding-top: 2%;
+	padding-right: 3%;
+	padding-bottom: 2%;
+	padding-left: 3%;
+	
+	width: 70%;
+	
+	
+	margin-left: auto;
+    margin-right: auto;
+
+}
+textarea{
+	width: 20em;
+	height: 60em
+
+}
+	
+
+
+
+
+/* footer display */
+footer{
+
+	/* background image */
+	background-image: linear-gradient(to bottom, rgba(210, 172, 172,1), rgba(172, 210, 172,1));
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-attachment: fixed;
+	
+	border-style: double;
+	border-width: 12px;
+	
+	float: bottom;	
+}
+
+/* For tablets: */
+  @media only screen and (min-width: 600px) {
+  
+ header {
+	
+	padding-top: 1%;
+	padding-right: 2%;
+	padding-bottom: 1%;
+	padding-left: 2%;
+	
+	font-size: 1em;
+}
+
+body{
+	text-shadow: 2px 2px 5px pink;
+	font-family: Roboto, sans-serif, ariel;
+	font-size: 2em;
+}
+  
+ 
+table, th, tr, td {
+	font-size: 80%;
+}
+caption{
+
+	font-size: 150%;
+}
+
+}
+
+	/* For desktop: */
+@media only screen and (min-width: 1024px) {
+
+
+* {
+  box-sizing: border-box;
+}
+
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+  
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+header {
+	
+	padding: 15px;
+	float:right;
+	border-style: double;
+	border-width: 12px;
+}
+
+nav {
+	
+	float: left;
+	padding: 15px;
+	border-style: double;
+	border-width: 12px;
+	font-size: 1em;
+	
+}
+
+main {
+	
+	float: left;
+	padding: 15px;
+	border-style: double;
+	border-width: 12px;
+	font-size: 100%;
+	
+}
+
+
+footer{
+	
+	float: left;
+	padding: 15px;
+	border-style: double;
+	border-width: 12px;
+}
+
+#map{
+	float:right;
+}
+#aboutMe{
+	border-style: none;
+}
+#interests{
+	border-style: double;
+	border-width: 12px;
+}
+
+
+#learning{
+	border-style: double;
+	border-width: 12px;
+}
+
+form{
+	float: right;
+}
+
+
+textarea{
+	width: 60em;
+	height: 20em
+}
+
+label{
+	font-size: 50%
+}
+
+input{
+	height:80%;
+	width:20%;
+}
+
+/* mouse over link */
+nav a:hover {
+	color: rgb(0, 102, 0);
+}
+
+table, th, tr, td {
+	font-size: 100%;
+}
+caption{
+
+	font-size: 160%;
+}
+
+#edu{
+	font-size: 150%
+}
+
+
+}
+
+
+
+
+	
